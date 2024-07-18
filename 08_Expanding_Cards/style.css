@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+   
+}
+
+.panel{
+    width: 800px;
+    height: 500px;
+    flex: 0.5;
+    box-sizing: border-box;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    position: relative;
+    margin: 10px;
+    -webkit-transition: all 1400ms ease-in;
+}
+
+
+h3{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 3s ;
+}
+
+.active{
+    flex: 5;
+}
+
+.bgImg1{
+    background-image: url('imges/panne1.jpg');
+   
+}
+
+
+.bgImg2{
+    background-image: url('imges/panel2.jpg');
+   
+}
+.bgImg3{
+    background-image: url('imges/panel3.jpg');
+    
+}
+.bgImg4{
+    background-image: url('imges/panel4.jpg');
+    
+}
+.bgImg5{
+    background-image: url('imges/panel5.jpeg');
+    
+}
+
