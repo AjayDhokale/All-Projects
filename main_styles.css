@@ -7,8 +7,11 @@
     font-family: system-ui, sans-serif;
     color: black;
     background-color: white;
+    padding-top: 100px;
   }
   
+
+    
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -18,8 +21,14 @@
     gap: 0.5rem;
     border-bottom: solid 1px #aaa;
     background-color: #eee;
-  }
-  
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;    
+    z-index: 100;
+  }   
+
   nav a {
     display: inline-block;
     min-width: 9rem;
@@ -30,10 +39,10 @@
     text-decoration: none;
     color: #1b1b1b;
   }
-  
+
   nav a[aria-current='page'] {
-    color: #000;
-    background-color: #d4d4d4;
+  color: #000;
+  background-color: #d4d4d4;
   }
   
   main {
