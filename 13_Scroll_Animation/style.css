@@ -1,0 +1,30 @@
+body{
+    background-color: #414141;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:  sans-serif;
+}
+
+
+.box{
+    background-color: black;
+    color: white;
+    padding: 50px 125px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 24px;
+    transform: translateX(400%);
+    transition: transform 1s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
