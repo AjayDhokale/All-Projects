@@ -7,7 +7,8 @@
     font-family: system-ui, sans-serif;
     color: black;
     background-color: white;
-    padding-top: 100px;
+    padding-top: 60px;
+    
   }
   
 
@@ -54,9 +55,10 @@
     font-size: 1.5rem;
   }
   
+
   .projects {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   
   .project-link {
@@ -66,6 +68,16 @@
     color: #212121;
     text-decoration: none;
     border: 2px solid #212121;
+    font-style: italic;
+    font-weight: 500;
     margin-top: 5px;
   }
   
+  /* .project-link.left-column {
+    grid-column: 1;
+  }
+  
+  .project-link.right-column {
+    grid-column: 2;
+  }
+   */
