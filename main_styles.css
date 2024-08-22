@@ -6,7 +6,7 @@
     margin: 0;
     font-family: system-ui, sans-serif;
     color: black;
-    background-color: white;
+    background-image: url(images/bg3.jpg);
     padding-top: 60px;
     
   }
@@ -38,6 +38,7 @@
     border: 2px solid #212121;
     font-style: italic;
     font-weight: 500;
+   
     margin-top: 5px;
   }
   
