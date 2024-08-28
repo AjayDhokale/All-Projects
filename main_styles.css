@@ -7,6 +7,9 @@
     font-family: system-ui, sans-serif;
     color: black;
     background-image: url(images/bg3.jpg);
+
+
+    
     padding-top: 60px;
     
   }
@@ -25,8 +28,8 @@
   
 
   .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display:flex;
+    flex-direction: column;
   }
   
   .project-link {
