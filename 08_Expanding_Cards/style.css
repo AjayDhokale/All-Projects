@@ -3,7 +3,8 @@
 }
 
 body{
-    margin-top: 100px;
+    margin-top: 20%;
+
 }
 
 .container{
@@ -11,13 +12,11 @@ body{
     justify-content: center;
     align-items: center;
 
-   
-   
 }
 
 .panel{
     width: 800px;
-    height: 500px;
+    height: 50vh;
     flex: 0.5;
     box-sizing: border-box;
     color: white;
