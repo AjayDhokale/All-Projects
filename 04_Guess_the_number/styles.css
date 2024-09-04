@@ -9,6 +9,7 @@ body {
   min-width: 480px;
   margin: 0 auto;
   background-color: #212121;
+  margin-top: 100px;
 }
 
 .lastResult {

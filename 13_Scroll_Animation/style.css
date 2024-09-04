@@ -6,12 +6,13 @@ body{
     justify-content: center;
     align-items: center;
     font-family:  sans-serif;
+    margin-top: 100px;
 }
 
 
 .box{
-    background-color: black;
-    color: white;
+    background-color: rgb(215, 215, 215);
+    color: rgb(0, 0, 0);
     padding: 50px 125px;
     margin-bottom: 20px;
     border-radius: 10px;

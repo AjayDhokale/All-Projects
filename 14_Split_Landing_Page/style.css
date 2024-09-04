@@ -98,7 +98,7 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
     padding: 30px 90px;
-   
+    white-space: nowrap;
 }
 
 .split.left .btn:hover{
