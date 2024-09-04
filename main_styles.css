@@ -5,15 +5,31 @@
   body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    color: black;
-    background-image: url(images/bg3.jpg);
-
-
-    
+    color: white;
+    background-color: black;
     padding-top: 60px;
-    
   }
   
+
+  
+
+
+
+  .bi{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+
+    background-color: #fff;
+    color: black;
+    padding: 3px 8px;
+    font-size: 25px;
+    border-radius: 50px;
+  }
+
+  .bi-sun{
+    display: none;
+  }
 
 
   
@@ -38,7 +54,7 @@
     border-radius: 8px;
     color: #212121;
     text-decoration: none;
-    border: 2px solid #212121;
+    border: 2px solid #ffffff;
     font-style: italic;
     font-weight: 500;
    
