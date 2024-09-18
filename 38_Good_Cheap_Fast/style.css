@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222222;
+    color: white;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.toggle-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0;
+    width: 200px;
+}
+
+.toggle{
+   visibility: hidden;
+}
+.label{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(202, 197, 197);
+    border-radius: 20px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.ball{
+    
+    background-color: white;
+    height: 34px;
+    width: 34px;
+    border-radius: 20px;
+    transition: transform linear 0.3s ;
+    margin: 0;
+}
+
+
+.toggle:checked + .label {
+    background-color: blueviolet;
+
+}
+
+.toggle:checked + .label  .ball {
+    transform: translateX(113%);
+}
+
