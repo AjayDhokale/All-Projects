@@ -145,7 +145,7 @@ h1 {
 
 .project-link:hover {
   background-color: #f5f5f5;
-  transform: translateY(-2px); /* Subtle lift on hover */
+  transform: translateY(-2px) scale(1.1); /* Subtle lift on hover */
 }
 
 /* Optional Layout Columns (Currently Commented Out) */
