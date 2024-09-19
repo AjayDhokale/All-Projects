@@ -1,4 +1,4 @@
-    
+/*     
   nav1 {
     display: flex;
     flex-wrap: wrap;
@@ -30,4 +30,52 @@
   nav1 a[aria-current='page'] {
   color: #000;
   background-color: #d4d4d4;
+  } */
+
+
+
+
+  nav1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem; /* Slightly increased padding for a more spacious feel */
+    gap: 0.75rem; /* Increased gap between items */
+    border-bottom: solid 1px #ccc; /* Lighter border color for a softer look */
+    background-color: #f9f9f9; /* Softer, lighter background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
   }
+  
+  nav1 a {
+    display: inline-block;
+    min-width: 9rem;
+    padding: 0.6rem 1rem; /* Increased padding for a balanced look */
+    border-radius: 0.3rem; /* Slightly larger radius for a smoother appearance */
+    border: solid 1px rgba(34, 34, 34, 0.1); /* Softer border with lighter color */
+    text-align: center;
+    text-decoration: none;
+    color: #333; /* Darker, more modern text color */
+    background-color: #fff; /* Light background for better contrast */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  nav1 a:hover {
+    background-color: #e0e0e0; /* Light gray background on hover */
+    color: #000; /* Darken text on hover for better contrast */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Add a shadow effect on hover */
+  }
+  
+  nav1 a[aria-current='page'] {
+    color: #000;
+    background-color: #d4d4d4; /* Highlight the current page link */
+    font-weight: bold; /* Emphasize the active link */
+    border: solid 1px #999; /* Subtle border for active state */
+  }
+  
