@@ -1,4 +1,4 @@
-html {
+/* html {
   margin: 0;
 }
 
@@ -33,4 +33,65 @@ span {
 
 #yellow {
   background: yellow;
+} */
+
+
+/* Resetting margins and default styles */
+html {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Adds a modern font */
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Container styling */
+.canvas {
+  margin: 100px auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* Common button styles */
+.button {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  display: inline-block;
+  margin: 10px; /* Adds space between buttons */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  cursor: pointer; /* Indicates interactivity */
+}
+
+/* Color-specific button styles */
+#red {
+  background: #e74c3c;
+}
+
+#orange {
+  background: #e67e22;
+}
+
+#blue {
+  background: #3498db;
+}
+
+#yellow {
+  background: #f1c40f;
+}
+
+/* Hover effects */
+.button:hover {
+  transform: scale(1.05); /* Slightly enlarges on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Button text styles if added in future */
+span {
+  display: block;
+  color: white;
+  font-weight: bold;
+  line-height: 100px; /* Centers text vertically */
+  text-transform: uppercase; /* Capitalizes text */
+  user-select: none; /* Prevents text selection */
 }
