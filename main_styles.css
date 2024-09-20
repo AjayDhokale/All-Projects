@@ -87,26 +87,29 @@ body {
 
 /* Button/Icon Styling */
 .bi {
-  position: absolute;
-  top: 100px;
-  right: 50px;
+  position: fixed;
+  top: 110px;
+  right: 30px;
   background-color: #fff;
   color: #121212; /* Consistent with the background */
-  padding: 5px 12px; /* More padding for a better look */
+  padding: 5px 9px 5px 9px; /* More padding for a better look */
   font-size: 24px;
-  border-radius: 50px;
+  border-radius: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+  border: none;
 }
 
-.bi:hover {
-  background-color: #f0f0f0; /* Subtle hover effect */
-  color: #000;
-}
+
 
 /* Hidden icon styling */
 .bi-sun {
   display: none;
+}
+
+.bi-moon {
+  background-color: #000;
+  color: white;
 }
 
 /* Main Content */
