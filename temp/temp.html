@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div{
-            width: 500px;
-            height: 500px;
-            position: relative;
-            background-repeat: no-repeat;
-            background-image: url(08_Expanding_Cards/imges/panel3.jpg);
-           border-image: fill 0 linear-gradient(#0003, #000);
-        }
-
-        h1{
-            background-image: url(08_Expanding_Cards/imges/panel3.jpg);
-            font-size: 210px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-background-clip: text;
-            color: transparent;
-           background-size: cover;
-           
-
-            z-index: 200;
-        
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send OTP via Email</title>
 </head>
-<body style="background-color: black">
-    <h1>ANU</h1>
-    <div>
-        
-    </div>
+<body>
+
+  <form id="otpForm">
+    <label for="email" id="templbl"></label>
+    <label for="email" id="templbl2"></label>
+    <!-- <input type="email" id="email" placeholder="Enter email" required>
+    <button type="submit">Send OTP</button> -->
+  </form>
+
+  <script>
+    let str = {
+        name: {
+          first: 'Anni',
+          last: 'Bhand'
+        }
+    }
+  const lbl = document.getElementById('templbl')
+  const lbl2 = document.getElementById('templbl2')
+   
+  
+    lbl.innerHTML= '<p>Name: ${str.name.first}</p>'
+    lbl2.innerHTML= `<p>Name: ${str.name.first} ${str.name.last}</p>`
+
+
+
+
+
+
+
+
+    // document.getElementById('otpForm').addEventListener('submit', function(event) {
+    //   event.preventDefault(); // Prevent form from submitting normally
+
+    //   const email = document.getElementById('email').value;
+
+    //   if (validateEmail(email)) {
+    //     openEmailClientInNewTab(email);  // Open in a new tab
+    //   } else {
+    //     alert('Please enter a valid email address.');
+    //   }
+    // });
+
+    // // Function to validate email format
+    // function validateEmail(email) {
+    //   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    //   return re.test(email);
+    // }
+
+    // // Function to open Gmail in a new tab with pre-filled details
+    // function openEmailClientInNewTab(email) {
+    //   const subject = encodeURIComponent("Your OTP Code");
+    //   const body = encodeURIComponent("Here is your OTP: 123456");
+      
+    //   // For Gmail: Use the pre-filled Gmail URL format
+    //   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+
+    //   // Open the Gmail compose window in a new tab
+    //   window.open(gmailUrl, '_blank');
+    // }
+  </script>
 
 </body>
 </html>
