@@ -1,24 +1,23 @@
-*{
+* {
     box-sizing: border-box;
-}
-
-body{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
- overflow: hidden;
-
-}
-
-.container{
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-.panel{
+  }
+  
+  .panel {
     width: 800px;
     height: 50vh;
     flex: 0.5;
@@ -30,46 +29,42 @@ body{
     border-radius: 40px;
     position: relative;
     margin: 10px;
-    -webkit-transition: all 700ms ease-in;
-}
-
-
-h3{
+    transition: all 700ms ease-in;
+  }
+  
+  h3 {
     position: absolute;
     bottom: 10px;
     right: 10px;
     opacity: 0;
-}
-
-.panel.active h3{
+  }
+  
+  .panel.active h3 {
     opacity: 1;
-    transition: opacity 3s ;
-}
-
-.active{
+    transition: opacity 3s;
+  }
+  
+  .active {
     flex: 5;
-}
-
-.bgImg1{
+  }
+  
+  .bgImg1 {
     background-image: url('imges/panne1.jpg');
-   
-}
-
-
-.bgImg2{
+  }
+  
+  .bgImg2 {
     background-image: url('imges/panel2.jpg');
-   
-}
-.bgImg3{
+  }
+  
+  .bgImg3 {
     background-image: url('imges/panel3.jpg');
-    
-}
-.bgImg4{
+  }
+  
+  .bgImg4 {
     background-image: url('imges/panel4.jpg');
-    
-}
-.bgImg5{
+  }
+  
+  .bgImg5 {
     background-image: url('imges/panel5.jpeg');
-    
-}
-
+  }
+  

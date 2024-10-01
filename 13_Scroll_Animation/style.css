@@ -11,7 +11,7 @@ body{
 
 
 .box{
-    background-color: rgb(215, 215, 215);
+    background-color: #ffdbac;
     color: rgb(0, 0, 0);
     padding: 50px 125px;
     margin-bottom: 20px;
@@ -29,3 +29,4 @@ body{
 .box.show {
     transform: translateX(0);
 }
+
