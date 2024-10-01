@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .slider-container {
+            margin: 50px;
+        }
+
+        /* Style the slider itself */
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        /* Webkit browsers */
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 50px;
+            height: 50px;
+            background: "🙂";
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+            background: none; /* The emoji will replace the background */
+        }
+
+        /* Firefox browsers */
+        input[type="range"]::-moz-range-thumb {
+            width: 50px;
+            height: 50px;
+            background: none; /* The emoji will replace the background */
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        /* Additional slider thumb positioning */
+        .slider-thumb {
+            position: relative;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="slider-container">
+
+        <input type="range" min="0" max="100" value="50" id="emojiSlider">
+
+    </div>
+
+    <script>
+
+        const emojiSlider = document.getElementById("emojiSlider");
+
+        // Change emoji on slider thumb based on the slider value
+        emojiSlider.addEventListener("input", function() {
+            const value = emojiSlider.value;
+            let emoji = "";
+
+            // Change emoji based on the value of the slider
+            if (value < 20) {
+                emoji = "😢"; // Sad
+            } else if (value < 40) {
+                emoji = "😐"; // Neutral
+            } else if (value < 60) {
+                emoji = "🙂"; // Happy
+            } else if (value < 80) {
+                emoji = "😊"; // Smiling
+            } else {
+                emoji = "😁"; // Grinning
+            }
+
+            // Update the slider thumb with the emoji
+            emojiSlider.style.setProperty("--emoji-content", `'${emoji}'`);
+
+            // Dynamically update the thumb's emoji using JavaScript and CSS
+            emojiSlider.style.setProperty("background", `'${emoji}'`);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
