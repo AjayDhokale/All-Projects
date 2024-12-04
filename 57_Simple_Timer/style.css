@@ -1,0 +1,191 @@
+:root {
+    --degrees: 0deg
+}
+
+body {
+    background-color: #374151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #101c2f;
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+   
+    width: 500px;
+    margin: 0;
+    padding: 30px;
+  
+   
+}
+
+h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+
+.user-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+}
+
+.user-time label {
+    color: #e5e7eb;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+ 
+}
+
+input {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border: 2px solid #4b5563;
+    border-radius: 0.5rem;
+    background-color: #1f2937;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s ease;
+    text-align: center;
+    margin: 0;
+    max-width: 100px;
+    
+}
+
+input:focus {
+    border-color: #63b3ed;
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+button.enter-time {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button.enter-time:hover {
+    background-color: #2563eb;
+}
+
+button.enter-time:active {
+    transform: scale(0.95);
+}
+
+
+.timer-circle {
+    background: conic-gradient(transparent 0deg, transparent var(--degrees), white var(--degrees), white 360deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    margin: 1.5rem auto;
+    border-radius: 9999px;
+    position: relative;
+}
+
+#timer {
+    color: #bfdbfe;
+    position: relative;
+    font-size: 3rem;
+    z-index: 10;
+}
+
+.inner-circle {
+    width: calc(100% - 4px);
+    aspect-ratio: 1/1;
+    background-color: #2d3748;
+    border-radius: 100%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+
+}
+
+.hand {
+    height: 50%;
+    position: absolute;
+    top: 0;
+    transform-origin: bottom center;
+    transform: rotate(var(--degrees));
+}
+
+.marker {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.25rem;
+    left: -0.25rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #63b3ed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+}
+
+
+
+.button:active {
+    border: 2px solid #FF5733; 
+    border-radius: 50%; 
+    transform: scale(0.95);
+}
+
+#play.custom-bg {
+    background-color: #4caf50;
+}
+
